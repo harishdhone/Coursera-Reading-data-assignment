@@ -55,7 +55,7 @@ full_activity_data <- bind_rows(test_data,train_data)
 full_activity_data <- merge(full_activity_data,activity_labels,
                          by.x = "activity_id",
                          by.y = "activity_id")
-### Converting to data frame tbl for better viewability
+# Converting to data frame tbl for better viewability
 full_activity_data <- tbl_df(full_activity_data) 
 
 # selecting only the mean/std variables
